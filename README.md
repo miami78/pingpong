@@ -27,6 +27,8 @@ Setup/Installation Requirements
 
 * Clone repository.
 * Double click "index.html"
+            OR
+* Visit https://miami78.github.io/pingpong/
 
 
 Technologies Used
