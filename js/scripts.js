@@ -80,7 +80,7 @@ $(document).ready(function(){
         }else{$("ul").append("<li>" + value + "</li>");}
       });
     }else {
-      $(".error").hide().text("Please enter a number between 1 and 3999.").fadeIn();
+      $(".error").hide().text("Please enter a number between 1 and 400.").fadeIn();
     }
     $("ul li").hide();
     $("ul li").each(function(i) {
