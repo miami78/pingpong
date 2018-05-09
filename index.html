@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="ping-pong project">
+  <meta name="author" content="Miami Larry">
+
+<!-- SITE TITLE -->
+    <title>PING PONG</title>
+
+<!-- BOOTSTRAP  -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+<body>
+    <!-- ===============================================================
+                                      HEADER
+      ================================================================ -->
+    <div class="container">
+      <h1>PING PONG</h1>
+      <p><img src = "img/js.png" id ="jsImage" alt = "image of js logo"></p>
+      <div class="panel">
+        <div class="panel-body">
+          <form id="pigLatin">
+            <label for="input" class="shadow">Enter number between 1 and 3999:</label>
+            <input type="text" id="input" class="form-control" value="0"><br>
+            <div class="center">
+              <button type="submit" id="submit" class="btn-warning btn center">GO!!</button>
+            </div><!--end center-->
+          </form><!--end form -->
+        </div><!--end panel-body-->
+      </div><!--end panel-->
+      <hr />
+      <div class="output">
+        <ul>
+        </ul>
+        <span class="error"></span>
+      </div><!--end output-->
+
+    </div><!--end container-->
+
+            <!-- Navigation -->
+    <div class="topnav">
+  <a href="#directions" class="navigation">Directions</a>
+  <a href="#examples" class="navigation">Examples</a>
+    </div>
+
+    <hr />
+  <div class="row">
+      <div class="column">
+        <div id="directions" class="secondaryContent">
+          <h2>Directions</h2>
+          <p>Enter a number from 1 to 3999, then click "Go!". The application will count up to the number that you entered, substituting the word "pong" for numbers divisible by three, the word "ping" for numbers divisible by five, and the words "ping pong" for numbers divisible by both three and five. This is a classic programming exercise intended to teach students how to deal with frustration and also how to code.</p>
+
+        </div><!--end directions-->
+        <div class="column">
+        <div id="examples" class="secondaryContent">
+          <h2>Examples</h2>
+            <div class="col-md-10">
+              <h3>Input: 3</h3>
+              <p class ="center pingPong">1 2 ping </p>
+            </div>
+            <div class="col-md-10">
+              <h3>Input: 5</h3>
+                <p class ="center pingPong">1 2 ping 4 pong</p>
+            </div>
+            <div class="col-md-10">
+              <h3>Input: 15</h3>
+              <p class ="center pingPong">1 2 ping 4 pong ping 7 8 ping pong 11 ping 13 14 ping pong</p>
+            </div>
+
+          </div>
+
+
+        </div><!--end directions-->
+      </div><!--end row-->
+
+    </div>
+    <!-- ===============================================================
+                              FOOTER
+================================================================ -->
+    <footer>
+      <h4><span class="glyphicon glyphicon-copyright-mark"></span> 2018 Miami Larry</h4>
+    </footer>
+    <!-- ===============================================================
+                                      END
+        ================================================================ -->
+
+                <!-- =========================
+                             SCRIPTS
+                     ============================== -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"  type="text/javascript"></script>
+    <script src="js/scripts.js">
+
+    </script>
+</body>
+</html>
