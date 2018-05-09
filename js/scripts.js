@@ -1,11 +1,5 @@
-var isAcceptableInteger = function (number){
-  var input = parseInt(number);
-  console.log("input: ", input);
-  if (!isNaN(input) && (input >= 1 && input <= 400)) {
-    return true;
-  }
-  return false;
-
+function isAcceptableInteger(inputValue) {       //checks if value is an integer
+    return inputValue % 1 === 0;                // 1 for true 0 for false
 }
 
 var pingPong = function (number){
@@ -66,11 +60,12 @@ $(document).ready(function(){
 
 
   $("form").submit(function (event){
-    var input = $("#input").val();
+    var rawInput = $("#input").val(),
+    validInput = rawInput.replace(/\D/g,''); //remove all non integer values from int
     $(".error").text("");
     $("ul").empty();
-    if (isAcceptableInteger(input)){
-      pingPong(input).forEach(function (value){
+    if (isAcceptableInteger(rawInput)){
+      pingPong(rawInput).forEach(function (value){
         if (value === "ping"){
           $("ul").append("<li class='ping shadow'>" + value + "</li>");
         }else if (value === "pong"){
